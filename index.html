@@ -169,12 +169,12 @@
                     <p>À la recherche d’informations qui ne figurent pas sur notre site internet ou besoin d’un renseignement complémentaire&nbsp;?</p>
                     <form action="#" method="POST">
                         <fieldset>
-                            <input type="text" name="lastname" placeholder="Votre nom*">
-                            <input type="text" name="firstname" placeholder="Votre prenom*">
+                            <input type="text" name="lastname" placeholder="Votre nom*" required>
+                            <input type="text" name="firstname" placeholder="Votre prenom*" required>
                         </fieldset>
-                        <input type="email" name="mail" placeholder="Votre email*">
-                        <input type="text" name="object" placeholder="Objet*">
-                        <textarea name="message" placeholder="Votre message*"></textarea>
+                        <input type="email" name="mail" placeholder="Votre email*" required>
+                        <input type="text" name="object" placeholder="Objet*" required>
+                        <textarea name="message" placeholder="Votre message*" required></textarea>
                         <label>* Champs obligatoires</label>
                         <fieldset>
                             <input type="checkbox" name="agreement" id="agreed">
@@ -241,5 +241,6 @@
             <p id="copyrights">&copy; 2025 - Yohann MOY - Sujet d’ECF Front End - Tous droits réservés.</p>
         </div>
     </footer>
+    <script src="./scipt.js" defer></script>
 </body>
 </html>

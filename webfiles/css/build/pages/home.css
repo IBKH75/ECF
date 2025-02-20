@@ -232,6 +232,41 @@ nav button span:nth-of-type(2) {
 nav button span:last-of-type {
     bottom: 6px;
 }
+
+#menu {
+    display: none; 
+    position: absolute;
+    top: 6.355rem; 
+    left: 0rem;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+}
+
+#menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    display: block; 
+}
+
+#menu a:hover {
+    color: #ED4621; 
+}
+
 img#presentation {
     position: absolute;
     top: 0;
@@ -328,7 +363,6 @@ header section {
    
 
 }
-
 
 
 
@@ -568,17 +602,186 @@ main section h3 {
     text-align: center;
 } /*# sourceMappingURL=home.css.map */
 
-.cosplay-container {
-  display: flex; /* Utilise flexbox pour la mise en page */
-  align-items: flex-start; /* Aligne les éléments en haut */
+
+
+#partners {
+    max-width: 1150px;
+    margin: auto;
 }
 
-.cosplay-article {
-  margin-left: 20px; /* Ajoute un espace entre l'image et le texte */
+#partners .partners-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    width: 100%;
 }
 
-.cosplay-image {
-  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
-  height: auto; /* Garde les proportions de l'image */
+#partners .partners-container div {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2.5rem 1.25rem;
+    box-sizing: border-box;
+    width: 20%; 
 }
+
+#partners img {
+    width: 160px;
+}
+
+
+@media screen and (max-width: 320px) {
+    #partners .partners-container {
+        flex-direction: column; 
+    }
+
+    #partners .partners-container div {
+        width: 100%; 
+        padding: 1.5rem; 
+    }
+
+    #partners img {
+        width: 100px; 
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    #partners .partners-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    #partners .partners-container div {
+        width: calc(50% - 0.625rem); 
+    }
+
+    #partners img {
+        width: 120px; 
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #partners .partners-container div {
+        width: calc(33.33% - 0.833rem); 
+    }
+
+    #partners img {
+        width: 140px; 
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    #partners .partners-container div {
+        width: calc(25% - 0.9375rem); 
+    }
+
+    #partners img {
+        width: 160px; 
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    #partners .partners-container div {
+        width: calc(20% - 1.25rem); 
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    footer {
+        padding:1rem; 
+        text-align: center; 
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 1.5rem; 
+    }
+
+    footer .mxwdth {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+    footer .socials-links {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    footer #location {
+        margin-top: 1rem; 
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    footer {
+        padding: 1.5rem; 
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 1.75rem; 
+    }
+
+    footer .mxwdth {
+        flex-direction: row; 
+        gap: 2rem; 
+    }
+
+    footer .socials-links {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 2rem; 
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 2rem; 
+    }
+
+    footer .mxwdth {
+        flex-direction: row; 
+    }
+
+    footer .socials-links {
+        justify-content: flex-start; 
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    footer {
+        padding: 2.5rem; 
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 2.25rem; 
+    }
+
+    footer .mxwdth {
+        gap: 3rem; 
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    footer {
+        padding: 3rem; 
+    }
+
+    footer h2,
+    footer h3 {
+        font-size: 2.5rem; 
+    }
+
+    footer .mxwdth {
+        max-width: 1200px; 
+        margin: auto; 
+    }
+}
+
 
